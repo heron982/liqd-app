@@ -1,15 +1,16 @@
 export const colors = {
-  bg: '#0B1F17',
-  bgElevated: '#122A20',
-  surface: '#183528',
-  border: '#244B39',
-  text: '#F3F7F4',
-  textMuted: '#9BB5A7',
-  accent: '#3DDB8A',
-  accentDark: '#24A863',
-  danger: '#F07178',
-  warning: '#E6C07B',
+  bg: '#000000',
+  bgElevated: '#111111',
+  surface: '#1A1A1A',
+  border: '#2E2E2E',
+  text: '#FFFFFF',
+  textMuted: '#8A8A8A',
+  accent: '#EAFF00',
+  accentDark: '#C4D900',
+  danger: '#FF4D4D',
+  warning: '#FFB020',
   white: '#FFFFFF',
+  black: '#000000',
 } as const;
 
 export const spacing = {
