@@ -1,25 +1,42 @@
 {
   "expo": {
-    "name": "liqd-app",
+    "name": "Liqd",
     "slug": "liqd-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "scheme": "liqd",
     "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B1F17"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true,
+          "NSAllowsLocalNetworking": true
+        }
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0B1F17",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "usesCleartextTraffic": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ]
   }
 }
